@@ -6,12 +6,13 @@ const tag1 = document.querySelector('.tag1');
 const tag2 = document.querySelector('.tag2');
 const length = document.querySelector('.length');
 const date = document.querySelector('.movie__date');
+const poster = document.querySelector('.movie__img');
 
 const GetInfo = () => {
 	fetch('current.json')
 		.then(response => response.json())
 		.then(data => {
-			console.log(data);
+			poster.src = data.img;
 			title.innerHTML = data.title;
 			director.innerHTML = data.director;
 			description.innerHTML = data.desc;
