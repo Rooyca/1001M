@@ -43,7 +43,7 @@ body {
     flex-direction: column;
 }
 
-.movie__price {
+.movie__date {
     background: linear-gradient(to top, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); 
     flex: 0 0 50px;
     font-size: 18px;
@@ -57,7 +57,6 @@ body {
 }
 
 .movie__title {
-  display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -71,7 +70,7 @@ body {
 .heading__secondary {
     font-size: 20px;
     color: grey;
-    display: flex;
+    display: block;
 }
 
 .movie__tag {
@@ -85,16 +84,17 @@ body {
 .movie__description {
     font-size: 19px;
     text-align: justify;
+    font-weight: 600;
 }
 
 .movie__details {
     display: flex;
-    margin: auto;
+    margin-top: auto;
 }
 
 .movie__detail {
    font-size: 15px;
    margin-right: 20px;
-   display: flex;
-   align-items: center;
+   font-weight: bold;
+   border-bottom: 2px solid gray;
 }
