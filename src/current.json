@@ -1,9 +1,9 @@
 {
-        "director": "Alfred Hitchcock",
-        "title": "Psyco",
-        "desc": "A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man under the domination of his mother.",
-        "year": "1960",
-        "tags": ["Mystery", "Thriller"],
-        "length": "1h 49min",
-        "img": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg"
+        "director": "Stanley Kubrick",
+        "title": "The Shining",
+        "desc": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
+        "year": "1980",
+        "tags": ["Drama", "Horror"],
+        "length": "2h 26min",
+        "img": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nRj5511mZdTl4saWEPoj9QroTIu.jpg"
 }
