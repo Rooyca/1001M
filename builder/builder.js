@@ -1,6 +1,6 @@
 // Function to generate sequential numbers
 function generateSequentialNumbers(startDate, endDate) {
-    let result = [];
+    const result = [];
     let currentDate = new Date(startDate);
 
     while (currentDate <= endDate) {
@@ -10,7 +10,7 @@ function generateSequentialNumbers(startDate, endDate) {
     return result;
 }
 
-function getMovieFromJsonAtIndex(index){
+function getMovieFromJsonAtIndex(index) {
     const movies = require('./movies.json');
     return movies['movies'][index];
 }
@@ -25,30 +25,45 @@ const sequentialNumbers = generateSequentialNumbers(startDate, endDate);
 const today = new Date();
 const formattedDate = today.toISOString().split('T')[0];
 
+// Read the HTML template once
+const fs = require('fs');
+let html = fs.readFileSync('./src/index.html', 'utf8');
+
 for (let index = 0; index < sequentialNumbers.length; index++) {
     const number = sequentialNumbers[index];
     const date = new Date(number);
     if (date.toISOString().split('T')[0] === formattedDate) {
-        console.log(`Today's number is: ${index+1}`);
+        console.log(`Today's number is: ${index + 1}`);
         const movieToday = getMovieFromJsonAtIndex(index);
         console.log(`Today's movie: ${movieToday.title}`);
-        const fs = require('fs');
-
-        // Read the HTML template
-        let html = fs.readFileSync('./src/index.html', 'utf8');
 
         // Replace placeholders with actual data
-        html = html.replace('__POSTER__', movieToday.img);
-        html = html.replace('__TITLE__', movieToday.title);
-        html = html.replace('__DIRECTOR__', movieToday.director);
-        html = html.replace('__DESCRIPTION__', movieToday.desc);
-        html = html.replace('__YEAR__', movieToday.year);
-        html = html.replace('__TAGS__', movieToday.tags);
-        html = html.replace('__LENGTH__', movieToday.length);
-        html = html.replace('__DATE__', new Date().toDateString());
+        html = html.replace(/__POSTER__|__TITLE__|__DIRECTOR__|__DESCRIPTION__|__YEAR__|__TAGS__|__LENGTH__|__DATE__/g, match => {
+            switch (match) {
+                case '__POSTER__':
+                    return movieToday.img;
+                case '__TITLE__':
+                    return movieToday.title;
+                case '__DIRECTOR__':
+                    return movieToday.director;
+                case '__DESCRIPTION__':
+                    return movieToday.desc;
+                case '__YEAR__':
+                    return movieToday.year;
+                case '__TAGS__':
+                    return movieToday.tags;
+                case '__LENGTH__':
+                    return movieToday.length;
+                case '__DATE__':
+                    return new Date().toDateString();
+                default:
+                    return match;
+            }
+        });
 
-        // Write the populated HTML
-        fs.writeFileSync('./src/index.html', html);
         break;
     }
 }
+
+// Write the populated HTML
+fs.writeFileSync('./src/index.html', html);
