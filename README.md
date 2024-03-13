@@ -10,7 +10,6 @@ Everyday get one movie from the [1001 Movies You Must See Before You Die](builde
 
 - We have a list of movies in `builder/movies.json`.
 - Everyday a Github Action runs and picks a movie corresponding to the day.
-- The movie is moved to `current.json`.
-- Another Action runs to populate the HTML file with the movie details.
-- Finally, the `src` folder is pushed to the `gh-pages` branch.
-- The website is hosted using Github Pages. [Check it out here](https://rooyca.github.io/1001M).
+- The same Action populates the HTML file with the movie details.
+- And finally, the `src` folder is pushed to the `gh-pages` branch.
+- The website is hosted using Github Pages. You can [check it out here](https://rooyca.github.io/1001M).
