@@ -102,7 +102,8 @@ body {
 /* Make it responsive */
 @media (max-width: 768px) {
     body {
-        font-size: 18px;
+        font-size: 13px;
+        margin: 10px;
     }
 
     .movie {
@@ -120,6 +121,9 @@ body {
     .movie__date {
         flex: 0 0 30px;
         writing-mode: horizontal-tb;
+    }
+    .movie__details {
+        margin-top: 15px;
     }
 
 }
