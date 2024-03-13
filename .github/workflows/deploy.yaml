@@ -18,12 +18,6 @@ jobs:
       - name: Create current.json 📝
         run: node ./builder/builder.js
 
-      - name: Move current.json ↪️
-        run: mv current.json src/current.json
-
-      - name: Populate HTML 🌳
-        run: node ./builder/populate-html.js
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
