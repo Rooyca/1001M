@@ -17,7 +17,7 @@ const GetInfo = () => {
 			description.innerHTML = data.desc;
 			year.innerHTML = "📅 "+data.year;
 			length.innerHTML = "🕒 "+data.length;
-			tag.innerHTML = data.tags;
+			tag.innerHTML = "🏷️ #"+data.tag;
 			date.innerHTML = new Date().toDateString();
 		})
 		.catch(error => {
