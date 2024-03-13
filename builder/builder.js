@@ -34,9 +34,6 @@ for (let index = 0; index < sequentialNumbers.length; index++) {
         console.log(`Today's movie: ${movieToday.title}`);
         const fs = require('fs');
 
-        // Read data from current.json
-        // const data = JSON.parse(movieToday);
-
         // Read the HTML template
         let html = fs.readFileSync('./src/index.html', 'utf8');
 
@@ -50,7 +47,7 @@ for (let index = 0; index < sequentialNumbers.length; index++) {
         html = html.replace('__LENGTH__', movieToday.length);
         html = html.replace('__DATE__', new Date().toDateString());
 
-        // Write the populated HTML to a new file
+        // Write the populated HTML
         fs.writeFileSync('./src/index.html', html);
         break;
     }
