@@ -1,1 +1,9 @@
-{"title":"Le Voyage Dans La Lune","director":"Georges Méliès","year":"2011","tags":"Adventure","desc":"Professor Barbenfouillis and five of his colleagues from the Academy of Astronomy travel to the Moon aboard a rocket propelled by a giant cannon. Once on the lunar surface, the bold explorers face the many perils hidden in the caves of the mysterious planet.","img":"https://image.tmdb.org/t/p/w600_and_h900_bestv2/9o0v5LLFk51nyTBHZSre6OB37n2.jpg","length":"0h 15m"}
+{
+        "director": "Stanley Kubrick",
+        "title": "The Shining",
+        "desc": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
+        "year": "1980",
+        "tags": ["Drama", "Horror"],
+        "length": "2h 26min",
+        "img": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/nRj5511mZdTl4saWEPoj9QroTIu.jpg"
+}
