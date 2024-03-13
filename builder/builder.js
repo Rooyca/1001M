@@ -31,7 +31,7 @@ for (let index = 0; index < sequentialNumbers.length; index++) {
     if (date.toISOString().split('T')[0] === formattedDate) {
         console.log(`Today's number is: ${index+1}`);
         const movieToday = getMovieFromJsonAtIndex(index);
-        console.log(`Today's movie: ${movieToday}`);
+        console.log(`Today's movie: ${movieToday.title}`);
         const fs = require('fs');
         const content = JSON.stringify(movieToday);
         fs.writeFileSync('current.json', content);
