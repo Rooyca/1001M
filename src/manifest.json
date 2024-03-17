@@ -1,0 +1,12 @@
+{
+	"name": "1001 Movies You Should Watch Before You Die",
+	"short_name": "1001 Movies",
+	"start_url": ".",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "favicon.svg",
+			"sizes": "800x800",
+		}
+	]
+}
