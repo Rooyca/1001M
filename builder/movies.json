@@ -38,12 +38,12 @@
         },
         {
             "title": "Intolerance",
-            "director": "Volodymyr Bakum",
+            "director": "D.W. Griffith",
             "year": "1916",
-            "tags": "#Movie",
-            "desc": "",
-            "img": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/scUM2zsxbUHPLKqJAMAdMYxlDVN.jpg",
-            "length": "0h 16m"
+            "tags": "#Drama",
+            "desc": "The story of a poor young woman separated by prejudice from her husband and baby is interwoven with tales of intolerance from throughout history.",
+            "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vPDRFUDY2wP7rLJUXSj1XkbszFf.jpg",
+            "length": "2h 52m"
         },
         {
             "title": "The Cabinet of Dr. Caligari",
