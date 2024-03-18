@@ -1,6 +1,7 @@
 {
 	"name": "1001 Movies You Should Watch Before You Die",
 	"short_name": "1001 Movies",
+	"description": "Everyday get a movie from the list of 1001 movies you should watch before you die",
 	"start_url": ".",
 	"display": "standalone",
 	"icons": [
